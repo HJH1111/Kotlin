@@ -1,9 +1,9 @@
 class Solution {
-    fun solution(n: Long): Long {
-        var answer : Long = 0
-        
-        for (x : Long in 1..n) {
-            if (x*x == n) return (x + 1) * (x + 1)
+   fun solution(n: Long): Long {
+        for (i in 0..n) {
+            if (i * i == n) {
+                return ((i + 1) * (i + 1))
+            }
         }
         return -1
     }
