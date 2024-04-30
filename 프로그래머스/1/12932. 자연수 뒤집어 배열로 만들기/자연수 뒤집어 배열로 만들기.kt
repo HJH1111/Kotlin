@@ -1,11 +1,12 @@
 class Solution {
     fun solution(n: Long): IntArray {
+        var num = n
         var answer = intArrayOf()
         
-        n.toString().map {
-            answer += (it.toInt() - '0'. toInt())
+        while(num > 0) {
+            answer = answer + (num %10).toInt()
+            num = num / 10
         }
-        
-        return answer.reversedArray()
+        return answer
     }
 }
