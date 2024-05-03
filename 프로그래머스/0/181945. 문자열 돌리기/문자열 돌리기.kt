@@ -1,7 +1,7 @@
 fun main(args: Array<String>) {
     val s1 = readLine()!!
-    s1.map {
-        print("$it\n")
+    for(s in s1) {
+        println(s)
     }
 
 }
